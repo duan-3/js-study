@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "UTF-8">
+      <title>소수 판별 프로그램</title>
+   </head>
+   <body>
+      <script>
+         var n = prompt("숫자를 입력해주세요!");
+         var n1 = Number(n);
+         var temp = n-1;
+         var ans;
+         while(temp>1){
+            ans = n % temp;
+            if(ans === 0){
+               alert("소수가 아닙니다!");
+               break;
+            }
+            temp--;
+         }
+         if(temp===1)alert("소수입니다!")        
+      </script>
+   </body>
+</html>
